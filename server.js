@@ -13,6 +13,7 @@ connectDB()
 app.use(express.json())
 app.use('/api/events', require('./Routes/eventRoute'))
 app.use('/api/users', require('./Routes/userRoute'))
+app.use('/api/booking', require('./Routes/bookingRoute'))
 app.use(errorHandler)
 
 app.listen(port, () => {
